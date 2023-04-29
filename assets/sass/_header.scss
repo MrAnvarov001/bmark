@@ -1,0 +1,100 @@
+@import './varible';
+
+header{
+    position: sticky;
+    top: 0;
+    background-color: $navBack;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 130px;
+    @media (max-width:1200px) {
+        font-size: 0.8rem;
+        height: 100px;
+    }
+    @media (max-width:950px) {
+        font-size: 0.7rem;
+    }
+    @media (max-width:650px) {
+        font-size: 0.6rem;
+        height: 80px;
+    }
+    .logo{
+        display: flex;
+        color: $btnColor;
+        justify-content: space-between;
+        @media (max-width:550px) {
+            width: 100%;
+        }
+        img{
+            width: 6.5em;
+        }
+        label{
+            display: none;
+            @media (max-width:550px) {
+                display: block;
+            }
+            i{
+                font-size: 1.5em;
+            }
+        }
+    }
+
+    input{
+        display: none;
+    }
+    #menu:checked + .pages{
+        left: 0;
+    }
+
+    .pages{
+        display: flex;
+        gap: 5.5em;
+        align-items: center;
+        @media (max-width:950px) {
+            gap: 3em;
+        }
+        @media (max-width:550px) {
+            position: fixed;
+            top: 80px;
+            left: -100vw;
+            transition: 0.4s ease-in-out;
+            flex-direction: column;
+            align-items: flex-start;
+            background-color: $vrWhite;
+            width: 60%;
+            height: calc(100vh - 80px);
+            font-size: 0.75rem;
+            padding: 2em;
+        }
+        @media (max-width:400px) {
+            width: 100%;
+            align-items: center;
+        }
+        ul{
+            display: flex;
+            gap: 4em;
+            @media (max-width:950px) {
+                gap: 2em;
+            }
+            @media (max-width:550px) {
+                flex-direction: column;
+            }
+            @media (max-width:400px) {
+                align-items: center;
+            }
+            li{
+                font-size: 0.9em;
+                font-weight: 400;
+                color: $vrBlack;
+                text-transform: capitalize;
+                &:hover{
+                    color: $btnColor;
+                }
+            }
+        }
+    }
+}

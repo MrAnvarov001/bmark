@@ -1,0 +1,169 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Noto Serif", serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+html {
+  font-size: 20px;
+}
+
+.overall {
+  max-width: 1920px;
+}
+
+.container {
+  width: 1620px;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+body {
+  background-color: lightblue;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  background-color: #FBEDDA;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 130px;
+}
+@media (max-width: 1200px) {
+  nav {
+    font-size: 0.8rem;
+    height: 100px;
+  }
+}
+@media (max-width: 950px) {
+  nav {
+    font-size: 0.7rem;
+  }
+}
+@media (max-width: 650px) {
+  nav {
+    font-size: 0.6rem;
+    height: 80px;
+  }
+}
+nav .logo {
+  display: flex;
+  color: #13A6BA;
+  justify-content: space-between;
+}
+@media (max-width: 550px) {
+  nav .logo {
+    width: 100%;
+  }
+}
+nav .logo img {
+  width: 6.5em;
+}
+nav .logo label {
+  display: none;
+}
+@media (max-width: 550px) {
+  nav .logo label {
+    display: block;
+  }
+}
+nav .logo label i {
+  font-size: 1.5em;
+}
+nav input {
+  display: none;
+}
+nav #menu:checked + .pages {
+  left: 0;
+}
+nav .pages {
+  display: flex;
+  gap: 5.5em;
+  align-items: center;
+}
+@media (max-width: 950px) {
+  nav .pages {
+    gap: 3em;
+  }
+}
+@media (max-width: 550px) {
+  nav .pages {
+    position: fixed;
+    top: 80px;
+    left: -100vw;
+    transition: 0.4s ease-in-out;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #FFFFFF;
+    width: 60%;
+    height: calc(100vh - 80px);
+    font-size: 0.75rem;
+    padding: 2em;
+  }
+}
+@media (max-width: 400px) {
+  nav .pages {
+    width: 100%;
+    align-items: center;
+  }
+}
+nav .pages ul {
+  display: flex;
+  gap: 4em;
+}
+@media (max-width: 950px) {
+  nav .pages ul {
+    gap: 2em;
+  }
+}
+@media (max-width: 550px) {
+  nav .pages ul {
+    flex-direction: column;
+  }
+}
+@media (max-width: 400px) {
+  nav .pages ul {
+    align-items: center;
+  }
+}
+nav .pages ul li {
+  font-size: 0.9em;
+  font-weight: 400;
+  color: #021112;
+  text-transform: capitalize;
+}
+nav .pages ul li:hover {
+  color: #13A6BA;
+}
+
+.btn_style1 {
+  border: 2px solid #13A6BA;
+  background-color: #13A6BA;
+  color: #FFFFFF;
+  padding: 0.5em 1.25em;
+  border-radius: 8px;
+  font-size: 1em;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,12 @@
+@import './varible';
+
+.btn_style1{
+    border: 2px solid $btnColor;
+    background-color: $btnColor;
+    color: $vrWhite;
+    padding: 0.5em 1.25em;
+    border-radius: 8px;
+    font-size: 1em;
+    font-weight: 400;
+    cursor: pointer;
+}
