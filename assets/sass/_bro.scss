@@ -1,0 +1,159 @@
+@import './varible';
+
+.bro{
+    background-color: $navBack;
+    display: flex;
+    @media (max-width:1000px) {
+        font-size: 0.7rem;
+    }
+    @media (max-width:1000px) {
+        font-size: 0.6rem;
+    }
+    @media (max-width:750px) {
+        flex-direction: column;
+        align-items: center;
+    }
+    .image{
+        width: 40em;
+        max-width: 50%;
+        position: relative;
+        @media (max-width:750px) {
+            max-width: 90%;
+        }
+        img{
+            width: 100%;
+            
+        }
+        .img1{
+            position: absolute;
+            top: 20em;
+            right: 0;
+            width: 5em;
+        }
+    }
+
+    .text{
+        width: 35em;
+        max-width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 2.5em;
+        padding: 9.5em 0;
+        position: relative;
+        @media (max-width:750px) {
+            max-width: 90%;
+        }
+        h1{
+            font-size: 0.9em;
+            font-weight: 400;
+            color: $blue;
+        }
+        h2{
+            font-size: 3em;
+            font-weight: 700;
+            color: $vrBlack;
+        }
+        p{
+            font-size: 1.2em;
+            font-weight: 400;
+        }
+        h3{
+            font-size: 1.2em;
+            font-weight: 700;
+        }
+        h4{
+            font-size: 0.9em;
+            font-weight: 400;
+        }
+        .img2{
+            width: 9em;
+            position: absolute;
+            top: 2em;
+            right:0;
+        }
+    }
+}
+
+
+.inputs{
+    position: relative;
+    @media (max-width:1000px) {
+        font-size: 0.7rem;
+    }
+    
+    .red_line{
+        position: absolute;
+        top: 13em;
+        left: 0;
+        width: 3em;
+        height: 1.5em;
+        background-color: $redLine;
+        border-radius: 0 1.7em 1.7em 0;
+        @media (max-width:700px) {
+            top: 10em;
+        }
+    }
+    .input{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 15em 0;
+        gap: 2em;
+        @media (max-width:810px) {
+            font-size: 0.6rem;
+        }
+        @media (max-width:700px) {
+            flex-direction: column;
+        }
+        .text{
+            width: 35em;
+            max-width: 50%;
+            @media (max-width:700px) {
+                max-width: 100%;
+            }
+            h1{
+                font-size: 3em;
+                font-weight: 700;
+                color: $vrBlack;
+            }
+            h2{
+                font-size: 1em;
+                font-weight: 400;
+                color: $lightgray;
+                width: 28em;
+                max-width: 100%;
+            }
+        }
+        form{
+            max-width: 50%;
+            @media (max-width:700px) {
+                max-width: 100%;
+            }
+        }
+        .formuz{
+            position: relative;
+            width: 36em;
+            max-width: 100%;
+            display: flex;
+            justify-content: flex-end;
+            input{
+                font-size: 0.9em;
+                font-weight: 400;
+                color: $lightgray;
+                border: 1px solid $inputborder;
+                border-radius: 1em;
+                width: 35em;
+                max-width: 100%;
+                padding: 1em 1.5em;
+                outline: none;
+            }
+            button{
+                position: absolute;
+                top: 50%;
+                right: 0.5em;
+                transform: translateY(-50%);
+            }
+        }
+    }
+}

@@ -19,12 +19,12 @@ html{
 }
 .overall{
     max-width: 1920px;
+    @media (max-width:1400px) {
+        font-size: 0.8rem;
+    }
 }
 .container{
     width: 1620px;
     max-width: 90%;
     margin: 0 auto;
-}
-body{
-    background-color: lightblue;
 }

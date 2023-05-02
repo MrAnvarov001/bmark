@@ -1,0 +1,99 @@
+@import './varible';
+
+.google{
+    margin: 12em 0 16em;
+    display: flex;
+    justify-content: space-between;
+    gap: 5em;
+    @media (max-width:1200px) {
+        font-size: 0.7rem;
+    }
+    @media (max-width:950px) {
+        font-size: 0.6rem;
+    }
+    @media (max-width:770px) {
+        flex-direction: column;
+        align-items: center;
+    }
+    @media (max-width:400px) {
+        font-size: 0.5em;
+    }
+    .text{
+        width: 35em;
+        max-width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 2em;
+        @media (max-width:750px) {
+            max-width: 100%;
+        }
+        h1{
+            font-size: 3em;
+            font-weight: 700;
+            color: $vrBlack;
+        }
+        h2{
+            font-size: 1em;
+            font-weight: 400;
+            color: $lightgray;
+        }
+
+        ul{
+            display: flex;
+            justify-content: space-between;
+            @media (max-width:400px) {
+                flex-direction: column;
+                gap: 1em;
+                align-items: center;
+                text-align: center;
+            }
+            li{
+                h3{
+                    font-size: 2.1em;
+                    font-weight: 700;
+                    color: $vrBlack;
+                }
+                h4{
+                    font-size: 0.9em;
+                    font-weight: 400;
+                    color: $lightgray;
+                }
+            }
+        }
+    }
+
+    .image{
+        width: 40em;
+        max-width: 50%;
+        position: relative;
+        height: 40em;
+        @media (max-width:750px) {
+            max-width: 100%;
+        }
+        @media (max-width:290px) {
+            font-size: 0.3rem;
+        }
+        .img1{
+            position: absolute;
+            top: 2em;
+            right: 2em;
+            width: 8.5em;
+            z-index: 2;
+        }
+        .img2{
+            width: 29em;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .img3{
+            width: 15em;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+    }
+}
+

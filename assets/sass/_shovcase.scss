@@ -1,0 +1,157 @@
+@import './varible';
+
+.shovcase{
+    background-color: $navBack;
+    @media (max-width:560px) {
+        font-size: 0.8rem;
+    }    
+    > h1{
+        font-size: 4em;
+        font-weight: 700;
+        color: $vrBlack;
+        width: 1000px;
+        margin: 0 auto;
+        max-width: 95%;
+        text-align: center;
+        padding-top: 180px;
+        @media (max-width:1000px) {
+            font-size: 3em;
+            padding-top: 100px;
+        }
+        @media (max-width:350px) {
+            font-size: 2em;
+        }
+    }
+    p{
+        font-size: 1em;
+        font-weight: 400;
+        color: $lightgray;
+        text-align: center;
+        padding-bottom: 130px;
+    }
+
+    .search{
+        background-color: $vrWhite;
+        width: 1200px;
+        margin: 0 auto;
+        max-width: 80%;
+        box-shadow: 0px 4px 55px rgba(0, 0, 0, 0.07);
+        border-radius: 20px;
+        @media (max-width:1300px) {
+            font-size: 0.7rem;
+        }
+        @media (max-width:1000px) {
+            font-size: 0.5rem;
+        }
+        @media (max-width:750px) {
+            width: 30em;
+            font-size: 0.7rem;
+        }
+        @media (max-width:350px) {
+            font-size: 0.55rem;
+        }
+        .title{
+            padding: 2.25em 2.6em 0;
+            border: 1px solid $bordercolor;
+            ul{
+                display: flex;
+                gap: 4em;
+                color: $lightgray1;
+                
+                li{
+                    padding-bottom: 1.5em;
+                    position: relative;
+                    text-align: center;
+                    &:nth-of-type(1){
+                        color: $vrBlack;
+                        &::after{
+                            content: '';
+                            position: absolute;
+                            width: 3.7em;
+                            height: 3px;
+                            background-color: $vrBlack;
+                            top: 2.8em;
+                            left: -0.7em;
+                        }
+                    }
+                }
+            }
+        }
+
+        .main_cards{
+            padding: 1.5em 2.7em 2.25em;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            @media (max-width:750px) {
+                flex-direction: column;
+                row-gap: 2em;
+            }
+            
+            .card{
+                display: flex;
+                flex-direction: column;
+                position: relative;
+                width: 25%;
+                @media (max-width:750px) {
+                    width: 100%;
+                    align-items: center;
+                }
+
+                &::after{
+                    content: '';
+                    width: 1px;
+                    height: 2.5em;
+                    background-color: $bordercolor1;
+                    position: absolute;
+                    top: 50%;
+                    right: 0;
+                    transform: translateY(-50%);
+                    @media (max-width:750px) {
+                        width: 3em;
+                        height: 1px;
+                        top: auto;
+                        bottom: -1em;
+                        right: auto;
+                        left: 50%;
+                        transform: translateX(-50%);
+
+                    }
+                }
+                ul{
+                    display: flex;
+                    gap: 0.6em;
+                    i{
+                        color: $btnColor;
+                    }
+                    h1{
+                        font-size: 0.9em;
+                        font-weight: 400;
+                        color: $lightgray;
+                    }
+                }
+                h2{
+                    font-size: 1.8em;
+                    font-weight: 700;
+                    color: $vrBlack;
+                    padding-top: 0.3em;
+                    padding-left: 0.7em;
+                }
+            }
+
+            button{
+                font-size: 1.3rem;
+                @media (max-width:1300px) {
+                    font-size: 1rem;
+                }
+                @media (max-width:1000px) {
+                    font-size: 0.7rem;
+                }
+            }
+        }
+    }
+
+    .image{
+        width: 100%;
+    }
+}

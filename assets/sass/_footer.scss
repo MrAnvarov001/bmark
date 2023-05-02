@@ -1,0 +1,108 @@
+@import './varible';
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    gap: 2em;
+    padding-bottom: 4em;
+    @media (max-width:1000px) {
+        font-size: 0.7rem;
+    }
+    @media (max-width:800px) {
+        font-size: 0.6rem;
+    }
+    @media (max-width:650px) {
+        flex-direction: column;
+        font-size: 0.7rem;
+        padding-left: 2em;
+        gap: 3em;
+        padding-bottom: 2em;
+    }
+    
+    .logos{
+        width: 17em;
+        max-width: 23%;
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+        @media (max-width:650px) {
+            max-width: 100%;
+        }
+        img{
+            width: 8.5em;
+        }
+        p{
+            font-size: 1em;
+            font-weight: 400;
+            color: $lightgray;
+        }
+    }
+
+     > ul{
+        width: 10em;
+        max-width: 18%;
+        display: flex;
+        flex-direction: column;
+        gap: 1.2em;
+        @media (max-width:650px) {
+            max-width: 100%;
+        }
+        li{
+            font-size: 1.2em;
+            font-weight: 700;
+            color: $vrBlack;
+            a{
+                font-weight: 400;
+            }
+            &:nth-of-type(1){
+                padding-bottom: 1.2em;
+            }
+        }
+    }
+
+    .icons{
+        width: 14em;
+        max-width: 23%;
+        @media (max-width:650px) {
+            max-width: 100%;
+        }
+        h1{
+            font-size: 1.2em;
+            font-weight: 700;
+            color: $vrBlack;
+        }
+        p{
+            font-size: 1em;
+            font-weight: 400;
+            color: $vrBlack;
+            margin: 2.5em 0 2em;
+        }
+
+        ul{
+            display: flex;
+            gap: 1em;
+            i{
+                color: $lightblue;
+                padding: 0.5em;
+                border: 1px solid $lightblue;
+                &:hover{
+                    color: $btnColor;
+                    border-color: $btnColor;
+                }
+            }
+        }
+    }
+}
+
+.lastdiv{
+    padding: 1.5em 0;
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid $bordercolor;
+    h1{
+        font-size: 0.9em;
+        font-weight: 400;
+        color: $lightgray;
+        text-align: center;
+    }
+}
